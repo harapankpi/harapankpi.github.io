@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>Harapan KPI - The Malaysia's Independent Government Manifesto Tracker</title>
+		<meta name="description" content="Weekly update on latest progress of Malaysia government, currently lead by Pakatan Harapan. Aims to improve transparency.">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="home.css">
+	</head>
+	<body class="padding-top">
+
+		<nav class="navbar fixed-top navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">Harapan KPI</a>
+			</div>
+		</nav>
+
+		<div id="content">
+			
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2>The Malaysia's Independent Government Manifesto Tracker</h2>
+							<h3>Weekly update on latest progress of Malaysia government. Aims to improve transparency.</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-3">
+							<div id="progress">
+								<canvas id="progress-chart" width="200" height="200"></canvas>
+								<p>Promises 0%<br>Complete</p>
+							</div>
+							<p>Days in Office: <span id="days"></span></p>
+						</div>
+						<div class="col-9"></div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<ul id="category" class="nav nav-pills nav-fill">
+							  	<li data-category="1" class="nav-item">
+							    	<a class="nav-link active">Reduce Burden</a>
+							  	</li>
+							  	<li data-category="2" class="nav-item">
+							    	<a class="nav-link">Political Reform</a>
+							  	</li>
+							  	<li data-category="3" class="nav-item">
+							    	<a class="nav-link">Economic Growth</a>
+							  	</li>
+							  	<li data-category="4" class="nav-item">
+							    	<a class="nav-link">Sabah/Sarawak</a>
+							  	</li>
+							  	<li data-category="5" class="nav-item">
+							    	<a class="nav-link">Global Image</a>
+							  	</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="table">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<table class="table table-bordered">
+							  <thead>
+							    <tr>
+							      <th scope="col" style="width: 85%">Promise</th>
+							      <th scope="col">Status</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    	<tr class="table-warning" data-category="1"><td>Abolish GST </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Reduce the pressures causing burdensome price increases </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Sharing the nationÕs wealth in a targeted and equitable way </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Increase the number of affordable housing for purchase and rental </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Reduce the burdens faced by young people </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Abolish Tolls </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Provide targeted petrol subsidies </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Improving the quality and coverage of public transport </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Improve access to and quality of health services </td><td>Pending</td></tr><tr class="table-warning" data-category="1"><td>Guarantee people's basic food needs and taking care of the welfare of farmers </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Restore the dignity of the Malays and Malay institutions </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Limit the Prime MinisterÕs term of office and restructure the Prime MinisterÕs Department </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Resolve 1MDB, FELDA, MARA and Tabung Haji mega scandals </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Reform the Malaysian Anti-Corruption Commission (MACC) and strengthen anti-corruption efforts </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Separating the Office of Attorney General from Public Prosecutor </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Restore the dignity of the Parliament </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Ensure transparency and robustness of our election system </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Create a political financing mechanism that has integrity </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Restore public trust in the judicial and legal institutions </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Make the Malaysian Armed Forces and the Royal Malaysia Police a respected and an enviable force </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Empowering the public service </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Make the governance of our GLCs world class at par with international standards </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Ensure government procurement produces the best value for taxpayerÕs money </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Revive the true spirit of federalism </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Strengthen the role and powers of the local authorities </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Make our human rights record respected by the world </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Abolish oppressive laws </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Support a creative young generation that are free from oppression </td><td>Pending</td></tr><tr class="table-warning" data-category="2"><td>Enhance the transparency and integrity of the budget and budgeting process </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Support the economic growth of Bumiputera and all citizens in the country </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Spur investment and simplify business processes and trade </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Introduce a tax system that is people-friendly and entrepreneur-friendly </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Set up Equal Opportunity Commission </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Enhance the income of the majority </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Raising the dignity of workers and creating more quality jobs </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Implementing EPF scheme for housewives </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Ensuring the long-term prosperity of the rakyat/people </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Advancing the interests of Orang Asal in Peninsular Malaysia </td><td>Pending</td></tr><tr class="table-warning" data-category="3"><td>Balancing economic growth with environmental protection </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>Implement the 1963 Malaysia Agreement </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>To ensure the prosperity of the people of Sabah and Sarawak by enhancing the statesÕ economic growt </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>Create more employment opportunities for Sabahan and Sarawakian youths </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>Making Sabah and Sarawak a model of harmonious society </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>Improving the quality of education and healthcare services </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>Advancing the interest of the rural and remote populations </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>Protecting the sovereignty and security of Sabah </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>Decentralisation of power to Sabah and Sarawak </td><td>Pending</td></tr><tr class="table-warning" data-category="4"><td>To return and guarantee the right of customary land of the people of Sabah and Sarawak </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Making government schools the best choice for its people </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Restore the authority and independence of public universities and institutes of higher learning </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Advance the interests of the disabled </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Fight crime and social ills </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Promote the integrity of family institution and neighbourliness </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Empowering societal institutions, civil society and social entrepreneurship </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>To increase the space for and diversify the activities of young people </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Establishing a Consultative Council for People's Harmony </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Malaysia must be known for its integrity, not corruption </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>Defend and protect the country's borders from external invasion, trafficking and smuggling </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>To lead efforts to resolve the Rohingya and Palestine crises </td><td>Pending</td></tr><tr class="table-warning" data-category="5"><td>To Promote Malaysia's role in international institutions </td><td>Pending</td></tr>
+							  </tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<footer>
+			<div class="container">
+				© 2018 by HarapanKPI (Contact: harapankpi (at) gmail.com) 
+			</div>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+		<script src="home.js"></script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	padding-top: 56px;
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar{
+	background: white;
+}
+
+#content{
+	flex: 1 0 auto;
+}
+
+.jumbotron{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: linear-gradient(
+      rgba(200,70,53, 0.9),
+      rgba(200,70,53, 0.9)
+    ), url('parliament.jpg');
+    background-size: cover;
+}
+
+.jumbotron h2{
+	color: white;
+	text-align: center;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+
+.jumbotron h3{
+	color: white;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#progress{
+	position: relative;
+}
+
+#progress p{
+	position: absolute;
+	top: 25%;
+	left: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+}
+
+.jumbotron p{
+	margin-top: 10px;
+	margin-bottom: 0;
+	color: white;
+	text-align: center;
+}
+
+#category .nav-item{
+	cursor: pointer;
+}
+
+.nav-pills .nav-link:hover, 
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:hover, 
+.nav-pills .show>.nav-link{
+	color: #fff!important;
+	background-color: rgb(200,70,53);
+}
+
+#table{
+	padding: 30px 0 50px 0;
+}
+
+#table thead{
+	text-align: center;
+}
+
+footer{
+	background: #eee;
+	padding: 20px 0;
+}
