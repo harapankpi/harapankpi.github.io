@@ -5,20 +5,20 @@ $(document).ready(function(){
 	    type: 'doughnut',
 	    data: {
 		    datasets: [{
-		        data: [100, 0, 0, 0, 0],
+		        data: [59, 1, 0, 0, 0],
 		        backgroundColor: [
 		        	'#f39c12', 
 		        	'#3498db',
-		        	"#9b59b6",
 		        	'#2ecc71',
+		        	"#9b59b6",
 		        	'#e74c3c'
 		        ]
 		    }],
 		    labels: [
 		        "Pending",
 		        "In Progress",
-		        "Partial",
 		        "Complete",
+		        "Partial",
 		        "Broken"
 		    ]
 		},
